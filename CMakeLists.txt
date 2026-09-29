@@ -11,7 +11,9 @@ string(JSON commit GET "${manifest}" source commit)
 file(GLOB patches "${CMAKE_CURRENT_SOURCE_DIR}/patches/*.patch")
 set(patch_command "")
 if (patches)
-  set(patch_command PATCH_COMMAND "${GIT_EXECUTABLE}" apply --whitespace=nowarn ${patches})
+  # Runs again whenever the module is fetched anew or reconfigured, so it starts from the pinned commit every time.
+  set(patch_command PATCH_COMMAND "${GIT_EXECUTABLE}" reset --quiet --hard COMMAND "${GIT_EXECUTABLE}" clean --quiet -fd
+    COMMAND "${GIT_EXECUTABLE}" apply --whitespace=nowarn ${patches})
 endif()
 # SOURCE_SUBDIR names no folder: the module is only fetched, its own build files are not used.
 FetchContent_Declare(mod-transmog GIT_REPOSITORY "${repo}" GIT_TAG "${commit}" SOURCE_SUBDIR none ${patch_command})

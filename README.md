@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.png" width="128" alt="logo"></p>
+
 # mod-transmog plugin
 
 Builds [azerothcore/mod-transmog](https://github.com/azerothcore/mod-transmog) as a plugin for

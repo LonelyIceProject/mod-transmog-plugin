@@ -5,4 +5,5 @@
 *.tga binary
 *.rgba binary
 
+
 *.patch -text
