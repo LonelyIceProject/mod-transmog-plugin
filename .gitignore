@@ -1,0 +1,12 @@
+# Build output and IDE files
+build/
+out/
+.vs/
+.vscode/
+.idea/
+*.user
+
+# Local notes and agent files
+.claude/
+CLAUDE.md
+AGENTS.md

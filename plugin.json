@@ -1,0 +1,22 @@
+{
+  "format": 1,
+  "id": "mod-transmog",
+  "version": "1.0.0",
+  "name": { "en": "Transmogrification", "ru": "Трансмогрификация" },
+  "description": {
+    "en": "Changes the look of equipped items to that of other items.",
+    "ru": "Меняет облик надетых предметов на облик других предметов."
+  },
+  "authors": [ "AzerothCore" ],
+  "license": "AGPL-3.0",
+  "homepage": "https://github.com/azerothcore/mod-transmog",
+  "source": {
+    "repo": "https://github.com/azerothcore/mod-transmog.git",
+    "commit": "0d85cbc53d63ce2df8527169ce6ae47f5f6f6ba8"
+  },
+  "core": { "abi": "lonelyice-ac-2" },
+  "platforms": [ "windows-x64" ],
+  "server": { "library": "mod_transmog" },
+  "databases": { "auth": "data/sql/db-auth", "characters": "data/sql/db-characters", "world": "data/sql/db-world" },
+  "config": "conf/transmog.conf.dist"
+}
