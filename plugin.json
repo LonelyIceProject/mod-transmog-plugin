@@ -1,7 +1,7 @@
 {
   "format": 1,
   "id": "mod-transmog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": { "en": "Transmogrification", "ru": "Трансмогрификация" },
   "description": {
     "en": "Changes the look of equipped items to that of other items.",
@@ -10,6 +10,7 @@
   "authors": [ "AzerothCore" ],
   "license": "AGPL-3.0",
   "homepage": "https://github.com/azerothcore/mod-transmog",
+  "locales": [ "en", "de", "es", "fr", "ko", "ru", "zh-CN", "zh-TW" ],
   "source": {
     "repo": "https://github.com/azerothcore/mod-transmog.git",
     "commit": "0d85cbc53d63ce2df8527169ce6ae47f5f6f6ba8"
