@@ -1,7 +1,7 @@
 {
   "format": 1,
   "id": "mod-transmog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": { "en": "Transmogrification", "ru": "Трансмогрификация" },
   "description": {
     "en": "Changes the look of equipped items to that of other items.",
@@ -19,5 +19,6 @@
   "platforms": [ "windows-x64" ],
   "server": { "library": "mod_transmog" },
   "databases": { "auth": "data/sql/db-auth", "characters": "data/sql/db-characters", "world": "data/sql/db-world" },
-  "config": "conf/transmog.conf.dist"
+  "config": "conf/transmog.conf.dist",
+  "settings": "settings.json"
 }
